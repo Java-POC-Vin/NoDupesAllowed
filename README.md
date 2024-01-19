@@ -1,18 +1,38 @@
-## Getting Started
+## No Dupes Allowed
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This project filters equal elements from two distinct lists.
 
-## Folder Structure
+## How to use
 
-The workspace contains two folders by default, where:
+1. Go to ./src/App.java
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+2. Change or add elements to desired lists.
+```java
+// elements in the first list:
+        fruitsList1.add("Morango");
+        fruitsList1.add("Banana");
+        fruitsList1.add("Maçã");
+        fruitsList1.add("Uva");
+        fruitsList1.add("Caqui");
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+// elements in the second list:
+        fruitsList2.add("Manga");
+        fruitsList2.add("Caqui");
+        fruitsList2.add("Morango");
+        fruitsList2.add("Amora");
+```
+3. Execute the script.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Output example
 
-## Dependency Management
+```java
+// Example for the following lists:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+fruitsList1 => "Morango", "Banana", "Maçã", "Uva", "Caqui"
+fruitsList2 => "Manga", "Caqui", "Morango", "Amora"
+
+// Output example:
+Morango
+Caqui
+```
+
